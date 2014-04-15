@@ -1,0 +1,3 @@
+language: objective-c
+script:
+  - bundle exec foodcritic -f any .
