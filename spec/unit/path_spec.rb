@@ -3,10 +3,6 @@ require 'unit/spec_helper'
 describe 'sprout-foobar::path' do
   let(:runner) { ChefSpec::Runner.new }
 
-  before do
-    stub_const('ENV', 'SUDO_USER' => 'fauxhai')
-  end
-
   it 'creates a file in the home directory' do
     runner.converge(described_recipe)
     expect(runner).to touch_file('/home/fauxhai/foobar')
