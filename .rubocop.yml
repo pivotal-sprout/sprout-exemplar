@@ -5,6 +5,7 @@ AllCops:
     - Rakefile
   Exclude:
    - cookbooks/**
+   - tmp/**
 
 SingleSpaceBeforeFirstArg:
   Enabled: false # Useful for more readable alignment of method call args
