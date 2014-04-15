@@ -2,7 +2,7 @@ require 'rake'
 require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 
-task default: %w[foodcritic rubocop spec:unit spec:integration]
+task default: %w(foodcritic rubocop spec:unit spec:integration)
 
 desc 'Run foodcritic'
 task :foodcritic do

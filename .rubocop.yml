@@ -1,2 +1,10 @@
+AllCops:
+  Include:
+    - Cheffile
+    - Gemfile
+    - Rakefile
+  Exclude:
+   - cookbooks/**
+
 SingleSpaceBeforeFirstArg:
   Enabled: false # Useful for more readable alignment of method call args
