@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'sprout-homebrew' do
+describe 'sprout-foobar' do
   before :all do
     expect(File).not_to be_exists("#{ENV['HOME']}/foobar")
     expect(system('soloist')).to be_true
