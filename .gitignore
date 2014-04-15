@@ -2,3 +2,4 @@ Cheffile.lock
 tmp/
 cookbooks/
 .idea/
+.librarian/
