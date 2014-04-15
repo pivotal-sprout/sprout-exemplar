@@ -30,11 +30,18 @@ TODO
 
 ## Contributing
 
+### Before committing
+
+```
+bundle
+bundle exec rake
+```
+
 ### [FoodCritic](http://acrmp.github.io/foodcritic/)
 
 ```
 bundle
-bundle exec foodcritic
+bundle exec rake foodcritic
 ```
 
 ### Unit tests
@@ -43,7 +50,7 @@ TODO: Describe our approach to unit testing with ServerSpec
 
 ```
 bundle
-bundle exec rspec spec/unit
+bundle exec rake spec:unit
 ```
 
 ### Integration tests
@@ -52,5 +59,5 @@ TODO: Describe our approach to integration testing with ServerSpec
 
 ```
 bundle
-bundle exec rspec spec/integration
+bundle exec rake spec:integration
 ```
