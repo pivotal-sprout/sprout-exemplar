@@ -4,6 +4,7 @@ require 'rubocop/rake_task'
 
 task default: %w[foodcritic rubocop spec:unit spec:integration]
 
+desc 'Run foodcritic'
 task :foodcritic do
   sh 'foodcritic . -f any'
 end
