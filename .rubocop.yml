@@ -9,3 +9,9 @@ AllCops:
 
 SingleSpaceBeforeFirstArg:
   Enabled: false # Useful for more readable alignment of method call args
+
+LineLength:
+  Max: 120
+
+Blocks:
+  Enabled: false # For multi-line expect { ... }.to blah { ... }
