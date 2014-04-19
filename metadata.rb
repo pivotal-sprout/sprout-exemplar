@@ -1,4 +1,4 @@
-name             'sprout-foobar'
+name             'sprout-exemplar'
 maintainer       'Pivotal'
 maintainer_email 'sprout-maintainers@pivotallabs.com'
 license          'MIT'

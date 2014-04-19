@@ -1,1 +1,1 @@
-include_recipe 'sprout-foobar::path'
+include_recipe 'sprout-exemplar::path'
