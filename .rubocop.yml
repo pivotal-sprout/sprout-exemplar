@@ -4,8 +4,8 @@ AllCops:
     - Gemfile
     - Rakefile
   Exclude:
-   - cookbooks/**
-   - tmp/**
+   - cookbooks/**/*
+   - tmp/**/*
 
 SingleSpaceBeforeFirstArg:
   Enabled: false # Useful for more readable alignment of method call args

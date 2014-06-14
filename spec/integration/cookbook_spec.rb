@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'sprout-exemplar' do
   before :all do
     expect(File).not_to be_exists("#{ENV['HOME']}/exemplar")
-    expect(system('soloist')).to be_true
+    expect(system('soloist')).to eq(true)
   end
 
   it 'creates a file in the home directory' do
