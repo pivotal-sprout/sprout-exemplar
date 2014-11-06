@@ -17,12 +17,12 @@ RuboCop::RakeTask.new
 
 namespace :spec do
   desc 'Run unit specs (ChefSpec)'
-  task :unit do
-    sh 'rspec spec/unit'
+  RSpec::Core::RakeTask.new(:unit) do |t|
+    t.pattern = 'spec/unit/**/*_spec.rb'
   end
 
   desc 'Run integration specs (Will actually execute recipe!)'
-  task :integration do
-    sh 'rspec spec/integration'
+  RSpec::Core::RakeTask.new(:integration) do |t|
+    t.pattern = 'spec/integration/**/*_spec.rb'
   end
 end
