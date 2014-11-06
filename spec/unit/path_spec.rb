@@ -1,7 +1,7 @@
 require 'unit/spec_helper'
 
 describe 'sprout-exemplar::path' do
-  let(:runner) { ChefSpec::Runner.new }
+  let(:runner) { ChefSpec::SoloRunner.new }
 
   it 'creates a file in the home directory' do
     runner.converge(described_recipe)

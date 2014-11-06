@@ -1,7 +1,7 @@
 require 'unit/spec_helper'
 
 describe 'sprout-exemplar::default' do
-  let(:runner) { ChefSpec::Runner.new }
+  let(:runner) { ChefSpec::SoloRunner.new }
 
   it 'includes the path recipe' do
     runner.converge(described_recipe)
