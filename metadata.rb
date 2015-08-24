@@ -1,6 +1,6 @@
 name             'sprout-exemplar'
 maintainer       'Pivotal'
-maintainer_email 'sprout-maintainers@pivotallabs.com'
+maintainer_email 'sprout-maintainers@googlegroups.com'
 license          'MIT'
 description      'Template repo for creating standalone cookbooks'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
