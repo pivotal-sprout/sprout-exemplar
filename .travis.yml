@@ -5,7 +5,7 @@ install:
   - sudo gem update --system --no-document
   - sudo gem install bundler --no-document -n /usr/local/bin
   - sudo chown -R $(whoami) ${TRAVIS_BUILD_DIR} # ensure tmp/ is writable for bundler
-  - sudo bundle install
+  - bundle install
 script:
   - bundle exec rake
   - bundle exec soloist
