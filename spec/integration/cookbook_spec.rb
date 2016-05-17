@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'sprout-exemplar' do
+RSpec.describe 'sprout-exemplar' do
   before :all do
     expect(File).not_to be_exists("#{ENV['HOME']}/exemplar")
     expect(system('soloist')).to eq(true)

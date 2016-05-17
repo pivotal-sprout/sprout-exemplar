@@ -1,6 +1,6 @@
 require 'unit/spec_helper'
 
-describe 'sprout-exemplar::default' do
+RSpec.describe 'sprout-exemplar::default' do
   let(:runner) { ChefSpec::SoloRunner.new }
 
   it 'includes the path recipe' do
