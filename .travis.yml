@@ -1,8 +1,9 @@
 language: objective-c
+osx_image: xcode7.3
 rvm: system
 install:
   - sudo gem install bundler --no-ri --no-rdoc
   - sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future bundle install
-  - sudo chown -R $(whoami) tmp/
+  - sudo chown -R $(whoami) ${TRAVIS_BUILD_DIR} # ensure tmp/ is writable for bundler
 script:
   - bundle exec rake ci
