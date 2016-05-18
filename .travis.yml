@@ -2,10 +2,10 @@ language: objective-c
 osx_image: xcode7.3
 rvm: system
 install:
-  - sudo gem update --system --no-document
-  - sudo gem install bundler --no-document -n /usr/local/bin
-  - sudo chown -R $(whoami) ${TRAVIS_BUILD_DIR} # ensure tmp/ is writable for bundler
-  - bundle install
+  - sudo gem update --system
+  - export GEM_HOME=tmp/ruby/2.0.0/
+  - export PATH=${GEM_HOME}/bin:${PATH}
+  - gem install bundler --no-document
+  - bundle install --system
 script:
-  - bundle exec rake
-  - bundle exec soloist
+  - bundle exec rake ci
