@@ -11,7 +11,7 @@ task ci: %w(default spec:integration)
 
 desc 'Run foodcritic'
 FoodCritic::Rake::LintTask.new do |t|
-  t.options[:fail_tags] = 'any'
+  t.options[:fail_tags] = ['any']
 end
 
 RuboCop::RakeTask.new
