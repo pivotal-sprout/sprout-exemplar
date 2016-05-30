@@ -58,7 +58,7 @@ bundle exec rake foodcritic
 
 ### Unit specs
 
-Unit specs use [ServerSpec](http://serverspec.org/)
+Unit specs use [ChefSpec](https://github.com/sethvargo/chefspec)
 
 ```
 bundle
