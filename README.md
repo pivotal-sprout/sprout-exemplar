@@ -9,13 +9,11 @@ Template repo for creating standalone cookbooks
 ### Prerequisites
 
 - [system ruby](.ruby-version)
-- [bundler](http://bundler.io/)
 
 ### Quickstart
 
 ```
-bundle
-bundle exec soloist
+./sprout
 ```
 
 ## Cookbook Usage
@@ -36,8 +34,7 @@ bundle exec soloist
 ### Before committing
 
 ```
-bundle
-bundle exec rake
+./sprout exec rake
 ```
 
 The default rake task includes rubocop, foodcritic, unit specs
@@ -45,15 +42,13 @@ The default rake task includes rubocop, foodcritic, unit specs
 ### [Rubocop](https://github.com/bbatsov/rubocop)
 
 ```
-bundle
-bundle exec rake rubocop
+./sprout exec rake rubocop
 ```
 
 ### [FoodCritic](http://acrmp.github.io/foodcritic/)
 
 ```
-bundle
-bundle exec rake foodcritic
+./sprout exec rake foodcritic
 ```
 
 ### Unit specs
@@ -61,18 +56,15 @@ bundle exec rake foodcritic
 Unit specs use [ChefSpec](https://github.com/sethvargo/chefspec)
 
 ```
-bundle
-bundle exec rake spec:unit
+./sprout exec rake spec:unit
 ```
 
 ### Integration specs
 
-Integrations specs will run the default recipe on the host system (destructive) and make assertions on the system after
-install.
+Integrations specs will run the default recipe on the host system (destructive) and make assertions on the system after install.
 
 *Note:* It has a precondition that exemplar is _not_ already installed on the system.
 
 ```
-bundle
-bundle exec rake spec:integration
+./sprout exec rake spec:integration
 ```
