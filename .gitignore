@@ -1,3 +1,4 @@
+.bundler/
 .idea/
 .librarian/
 tmp/
